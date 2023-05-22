@@ -32,7 +32,7 @@ if submit and user_input:
 
     with st.spinner("Waiting for DALL-E..."):
         dalle_response = openai.Image.create(
-            prompt=prompt,
+            prompt=prompt + "Animation styles for elementary school students ",
             size=size
         )
 
